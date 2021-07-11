@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <!-- 시계 default값 -->
+      <h2 id="clock">00:00:00</h2>
+
+      <!-- 1. 유저가 처음 앱을 열면 form과 h1은 css에 있는 hidden이라는 class때문에 숨겨져 있음. -->
+      <form id="login-form" class="hidden">
+        <input
+          required
+          maxlenght="15"
+          type="text"
+          placeholder="What is  your name?"
+        />
+        <button>Log In</button>
+      </form>
+
+      <h1 id="greeting" class="hidden"></h1>
+
+      <form action="" id="todo-form" >
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+
+      <!-- Js로 li추가 -->
+      <ul id="todo-list"></ul>
+    </div>
+
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quote.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+  </body>
+</html>
